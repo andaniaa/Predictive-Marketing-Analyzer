@@ -1,0 +1,56 @@
+Dataset: Bank Marketing
+Citation Request:
+This dataset is publicly available for research. Please cite the following paper if you plan to use this database:
+
+[Moro et al., 2011]
+S. Moro, R. Laureano, and P. Cortez. Using Data Mining for Bank Direct Marketing: An Application of the CRISP-DM Methodology. In P. Novais et al. (Eds.), Proceedings of the European Simulation and Modelling Conference - ESM'2011, pp. 117-121, Guimarães, Portugal, October 2011. EUROSIS.
+Available at: PDF | Bibliography
+
+1. Title:
+Bank Marketing
+
+2. Sources
+Created by: Paulo Cortez (University of Minho) and Sérgio Moro (ISCTE-IUL) in 2012.
+
+3. Past Usage
+The dataset was described and analyzed in the paper:
+S. Moro, R. Laureano, and P. Cortez. Using Data Mining for Bank Direct Marketing: An Application of the CRISP-DM Methodology.
+This paper was presented at the European Simulation and Modelling Conference - ESM'2011, Guimarães, Portugal, October 2011.
+
+4. Relevant Information
+This dataset is related to direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls, and often more than one contact was required to determine if a client would subscribe to a bank term deposit.
+
+There are two datasets provided:
+
+bank-full.csv: Contains all examples (45,211 instances), ordered by date (from May 2008 to November 2010).
+bank.csv: A smaller subset (4,521 instances), randomly selected from the full dataset. This is provided for testing computationally demanding machine learning algorithms (e.g., SVM).
+The goal of the classification task is to predict whether a client will subscribe to a term deposit (variable y).
+
+5. Number of Instances and Attributes
+bank-full.csv: 45,211 instances
+bank.csv: 4,521 instances
+Number of Attributes: 16 input attributes + 1 output attribute
+6. Attribute Information
+The dataset includes various attributes related to clients and their interaction with the bank during marketing campaigns. The attributes are:
+
+Client Data:
+
+age: Client’s age (numeric).
+job: Type of job (categorical: e.g., "admin", "student", "retired").
+marital: Marital status (categorical: "married", "single", "divorced").
+education: Education level (categorical: "primary", "secondary", "tertiary").
+default: Credit in default? (binary: "yes", "no").
+balance: Average yearly balance, in euros (numeric).
+housing: Has a housing loan? (binary: "yes", "no").
+loan: Has a personal loan? (binary: "yes", "no").
+Last Contact Data: 9. contact: Type of communication used (categorical: "telephone", "cellular"). 10. day: Last contact day of the month (numeric). 11. month: Last contact month (categorical: "jan", "feb", "dec"). 12. duration: Duration of the last contact in seconds (numeric).
+
+Other Attributes: 13. campaign: Number of contacts made during the current campaign (numeric). 14. pdays: Number of days since the client was last contacted in a previous campaign (numeric, -1 means no previous contact). 15. previous: Number of contacts made before the current campaign (numeric). 16. poutcome: Outcome of the previous marketing campaign (categorical: "success", "failure").
+
+Output Variable (Target): 17. y: Whether the client subscribed to a term deposit ("yes" or "no").
+
+7. Missing Attribute Values
+There are no missing attribute values in the dataset.
+
+8. Purpose of the Dataset
+This dataset is intended for research and data mining tasks, especially for building machine learning models to predict customer responses in marketing campaigns. The main classification task is to predict whether a client will subscribe to a term deposit based on their attributes and interaction with the bank during marketing campaigns.
